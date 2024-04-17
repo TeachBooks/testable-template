@@ -15,7 +15,7 @@ on:
 
 jobs: 
   call-workflow:
-    uses: ${{ format('TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@{0}', vars.CALLED_WORKFLOW_BRANCH) }}
+    uses: TeachBooks/deploy-book-workflow/.github/workflows/deploy-book.yml@feat/1/actions-summaries
     secrets: inherit
     permissions:
       contents: read
