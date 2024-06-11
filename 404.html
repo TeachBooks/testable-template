@@ -4,8 +4,8 @@ hello html (2)!
 <script>
 let currentUrl = window.location.href;
 let urlParts = currentUrl.split('/');
-if (urlParts.length > 5) {
-    urlParts.splice(5, 0, '2024');
+if (urlParts.length > 4) {
+    urlParts.splice(4, 0, '2024');
 }
 let newUrl = urlParts.join('/');
 window.location.href = newUrl;
