@@ -1,7 +1,12 @@
 <!DOCTYPE html><title>404</title>
 hello html (2)!
+
 <script>
-setTimeout(function() {
-    window.location.href = "https://example.com";
-}, 3000);
+let currentUrl = window.location.href;
+let urlParts = currentUrl.split('/');
+if (urlParts.length > 3) {
+    urlParts.splice(3, 0, '2024');
+}
+let newUrl = urlParts.join('/');
+window.location.href = newUrl;
 </script>
